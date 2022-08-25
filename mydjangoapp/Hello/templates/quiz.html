@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <title>Educational System for Acne</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      .nav-link {
+        color: palevioletred;
+      }
+    </style>
+  </head>
+  <body class="p-3 m-0 border-0 bd-example">
+
+    <!-- Example Code -->
+    
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+        <img class="ms-2" style="max-height:45px"src="https://i.imgur.com/ULqrCTC.png">
+          <span class="ms-3"> Educational System for Acne </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         
+          <form class="d-flex me-6" role="search">
+            <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-danger me-3" ><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+         <div class="col-6"></div>
+          <button class="btn btn-outline-secondary me-3" >
+            <a href="{% url 'profile' %}" style=" color:rgb(93, 89, 89); text-decoration: none;"> Your Profile </a> 
+            </button>
+            <button class="btn btn-outline-secondary ms-4 me-3"> 
+              <a href="{% url 'register' %}" style=" color:rgb(93, 89, 89); text-decoration: none;"> Log Out </a>
+              
+            </button>
+        </div>
+      </div>
+    </nav>
+    <div class="card text-center mt-4">
+      <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs">
+          <li class="nav-item ms-2 me-4">
+            <a class="nav-link" aria-current="true" href="{% url 'home' %}">Home</a>
+          </li>
+          <li class="nav-item me-4">
+            <a class="nav-link" href="{% url 'causes' %}">Causes</a>
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link" href="{% url 'prevention' %}">Prevention</a>
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link " href="{% url 'mythsfacts' %}" >Myths vs. Facts</a>
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link " href="{% url 'types' %}">Types of acne</a>
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link active" href="{% url 'quizes' %}">Quizes</a>
+          </li>
+          <li class="col-4">
+
+          </li>
+
+          <li class="nav-item">
+            <span style="background-color:palevioletred" class="badge badge-pill"> 
+              <a style=" color:white" class="nav-link" href="{% url 'products' %}">Products</a>
+            </span>
+            
+          </li>
+        </ul>
+      </div>
+      <div class="card-body" style="background-color:rgba(255, 143, 143, 0.199)">
+       <div class="m-3 mb-4"> 
+       </div>
+        
+      <div class="row m-2">
+        <div class="row m-2">
+            <div class="col-3">
+                <h2> Quiz - Causes of Acne</h2>
+            </div>
+            <div class="col-5">
+
+            </div>
+            <div class="col-3">
+                <h5>
+                    Time Remaining: <b style="background-color:rgba(255, 183, 233, 0.555); border: 2px solid pink; padding: 3px;">14:59 </b>
+                </h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="row m-3">
+
+        <div class="col-5"> 
+  <!--<span class="text-justify" style=" display:inline-block; background-color:rgba(243, 79, 142, 0.112)">
+              <h3>Q1 :  </h3>
+            </span>
+            <br> -->
+            
+
+            <p  class="" style=" text-align: justify; text-justify: inter-word; background-color:rgba(243, 79, 142, 0.112)" >
+                
+             Q1: If you have acne you should not use moisturisers or sunscreens?        
+                </p>
+
+                
+
+<div id="wrapper">
+    <!-- <label for="yes_no_radio">Do you agree to the terms?</label> -->
+  <p>
+  <input type="radio" name="yes_no" checked>Yes</input>
+  </p>
+  <p>
+  <input type="radio" name="yes_no">No</input>
+  </p>
+  </div>
+  
+  
+          </div>
+
+    </div>
+
+    <div class="row m-3">
+
+        <div class="col-5"> 
+  <!--<span class="text-justify" style=" display:inline-block; background-color:rgba(243, 79, 142, 0.112)">
+              <h3>Q1 :  </h3>
+            </span>
+            <br> -->
+            
+
+            <p  class="" style=" text-align: start; background-color:rgba(243, 79, 142, 0.112)" >
+                
+             Q2: Select the facts that are TRUE     
+                </p>
+
+                
+
+<div id="wrapper" style="text-align:start;">
+    <!-- <label for="yes_no_radio">Do you agree to the terms?</label> -->
+    <input type="checkbox" id="acne1" name="acne1" value="acne1">
+    <label for="acne1"> You can get acne from sleeping on a dirty pillow</label><br>
+    <input type="checkbox" id="acne2" name="acne2" value="acne2">
+    <label for="acne2">Eating chocolate causes acne</label><br>
+    <input type="checkbox" id="acne3" name="acne3" value="acne3">
+    <label for="acne3">Make-up causes acne and can make pre-existing acne worse</label><br>
+    <input type="checkbox" id="acne4" name="acne4" value="acne4">
+    <label for="acne4">Toothpaste is an effective treatment for acne</label><br>
+    <input type="checkbox" id="acne5" name="acne5" value="acne5">
+    <label for="acne5"> Salt water does not cure acne</label><br><br>
+  </div>
+  
+  
+          </div>
+
+    </div>
+
+    <div class="row m-3">
+
+        <div class="col-5"> 
+  <!--<span class="text-justify" style=" display:inline-block; background-color:rgba(243, 79, 142, 0.112)">
+              <h3>Q1 :  </h3>
+            </span>
+            <br> -->
+            
+
+            <p  class="" style=" text-align: justify; text-justify: inter-word; background-color:rgba(243, 79, 142, 0.112)" >
+                
+             Q3: Acne is a teenage problem. Adults shouldn't get it?       
+                </p>
+
+                
+
+            <div id="wrapper1">
+                <!-- <label for="yes_no_radio">Do you agree to the terms?</label> -->
+            <p>
+            <input type="radio" name="hellow" checked>Yes</input>
+            </p>
+            <p>
+            <input type="radio" name="hellow">No</input>
+            </p>
+            </div>
+
+          
+  
+  
+          </div>
+          <div class="col-3">
+            
+        </div>
+          <div class="col-3">
+            <span style="background-color:palevioletred; display: inline-block; height: 70px; width:150px; padding-top: 25px; font-size: large; text-align: center;" class="badge badge-pill"> 
+              <a style=" color:white" class="nav-link" href="{% url 'finishedquiz' %}">Finish Quiz </a>
+            </span>
+        </div>
+
+    </div>
+    
+    <!-- End Example Code -->
+  </body>
+  <script src="https://kit.fontawesome.com/7050e69c70.js" crossorigin="anonymous"></script>
+</html>

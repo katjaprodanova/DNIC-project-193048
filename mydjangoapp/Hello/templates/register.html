@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <title>Educational System for Acne</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      .nav-link {
+        color: palevioletred;
+      }
+    </style>
+  </head>
+  <body class="p-3 m-0 border-0 bd-example">
+
+    <!-- Example Code -->
+    
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+        <img class="ms-2" style="max-height:45px"src="https://i.imgur.com/ULqrCTC.png">
+          <span class="ms-3"> Educational System for Acne </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         
+          <form class="d-flex me-6" role="search">
+            <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-danger me-3" ><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+         <div class="col-6"></div>
+         
+            <button class="btn btn-outline-secondary ms-4 me-3"> 
+              <a href="{% url 'register' %}" style=" color:rgb(93, 89, 89); text-decoration: none;"> Register </a>
+              
+            </button>
+        </div>
+      </div>
+    </nav>
+    <div class="card text-center mt-4">
+      <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs">
+          <li class="nav-item ms-2 me-4">
+            <a class="nav-link disabled" aria-current="true" href="{% url 'home' %}">Home</a>
+          </li>
+          <li class="nav-item me-4">
+            <a class="nav-link disabled " href="{% url 'causes' %}">Causes</a>
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link disabled" href="{% url 'prevention' %}">Prevention</a>
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link disabled" href="{% url 'mythsfacts' %}" >Myths vs. Facts</a>
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link disabled" href="{% url 'types' %}">Types of acne</a>
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link disabled" href="{% url 'quizes' %}">Quizes</a>
+          </li>
+          <li class="col-4">
+
+          </li>
+
+          <li class="nav-item">
+            <span style="background-color:palevioletred" class="badge badge-pill"> 
+              <a style=" color:white" class="nav-link disabled" href="{% url 'products' %}">Products</a>
+            </span>
+            
+          </li>
+        </ul>
+      </div>
+      <div class="card-body" style="background-color:rgba(255, 143, 143, 0.199);height: 700px;">
+        <div class=" row m-3 mb-4 mt-5"> 
+            <div class="col-2"> </div>
+            <div class="col-7 ms-5" style="color: rgb(198, 83, 103)"> <h3 > Welcome to Registration form  </h3> <h5>Please REGISTER to continue using this system! </h5> </div>
+           
+        </div>
+            
+          <div class="row m-2">
+            <div class="col-1"> </div>
+            <div class="col-10"> 
+    
+                
+              <div class="container w-50 p-4" style=" height: 400px; text-align: justify; text-justify: inter-word; background-color:rgba(255, 143, 143, 0.116); border: 2px solid pink; padding: 3px;" >
+                <div class="row mt-1">
+                    <div class="col mb-2">
+                        <label> First Name: </label>
+                        <input class=" form form-control" type="text" placeholder="First name">
+                    </div>
+                    <div class="col mb-2">
+                        <label> Last Name: </label>
+                        <input class=" form form-control" type="text" placeholder="Last name">
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col mb-2">
+                        <label> E-mail: </label>
+                        <input class=" form form-control" type="email" placeholder="user@example.com">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-2">
+                        <label> Username: </label>
+                        <input class=" form form-control" type="text" placeholder="Username">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-2">
+                        <label> Password:</label>
+                        <input class=" form-control form-control" type="password" placeholder="Password">
+                    </div>
+                    <div class="col mb-2">
+                        <label> Repeat Password:</label>
+                        <input class=" form-control form-control" type="password" placeholder=" Repeat password">
+                    </div>
+                </div>
+                
+
+                <div class="row align-items-center mt-4">
+                    <div class="col-9"></div>
+                    <div class="col-3">
+                        <button class="btn btn-danger">
+                           
+                                <a href="{% url 'home' %}" style=" color:rgb(255, 255, 255); text-decoration: none;"> Register & login</a>
+                             
+                         </button>
+                  </div>
+                    
+                </div>
+    
+              </div>
+        </div>
+        </div>
+        </div>
+    
+    <!-- End Example Code -->
+  </body>
+  <script src="https://kit.fontawesome.com/7050e69c70.js" crossorigin="anonymous"></script>
+</html>
